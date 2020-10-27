@@ -4,5 +4,5 @@
 ![image](./Pictures/Gui.png)
 
 ### Description
-This Application is Gui Tool to convert feets and inches to centimeters,
+This Application is Gui Tool to convert feet and inches to centimeters,
 wrote as exercise from creating GUI using Swing and AWT.
