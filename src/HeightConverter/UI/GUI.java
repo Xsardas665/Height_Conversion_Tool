@@ -30,9 +30,18 @@ public class GUI {
         clearButton.addActionListener(e -> clearAction());
     }
     private void clearAction() {
-        feetTextField.setText(Strings.clearString);
-        inchesTextField.setText(Strings.clearString);
+        feetTF_clear();
+        inchesTF_clear();
+        cmTF_clear();
+    }
+    public void cmTF_clear() {
         cmTextField.setText(Strings.clearString);
+    }
+    public void inchesTF_clear() {
+        inchesTextField.setText(Strings.clearString);
+    }
+    public void feetTF_clear() {
+        feetTextField.setText(Strings.clearString);
     }
     private void setExitButtonListener() {
         exitButton.addActionListener(e -> System.exit(0));
