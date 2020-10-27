@@ -5,7 +5,8 @@ public class Strings {
     public static String feetLabelText = "Feet";
     public static String inchesLabelText = "Inches";
     public static String cmLabelText = "Centimeters";
-    public static String convertbuttonText = "Convert";
-    public static String clearbuttonText = "Clear";
-    public static String exitbuttonText = "Exit";
+    public static String convertButtonText = "Convert";
+    public static String clearButtonText = "Clear";
+    public static String exitButtonText = "Exit";
+    public static String clearString = "";
 }

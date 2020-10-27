@@ -4,6 +4,8 @@ import HeightConverter.Strings;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class GUI {
     private JPanel panel1;
@@ -17,13 +19,32 @@ public class GUI {
     private JLabel inchesLabel;
     private JLabel cmLabel;
 
+    public void setButtonsListeners() {
+        setExitButtonListener();
+        setClearButtonListener();
+    }
+
+    private void setClearButtonListener() {
+        clearButton.addActionListener(e -> clearAction());
+    }
+
+    private void clearAction() {
+        feetTextField.setText(Strings.clearString);
+        inchesTextField.setText(Strings.clearString);
+        cmTextField.setText(Strings.clearString);
+    }
+
+    private void setExitButtonListener() {
+        exitButton.addActionListener(e -> System.exit(0));
+    }
+
     public void setTexts() {
         feetLabel.setText(Strings.feetLabelText);
         inchesLabel.setText(Strings.inchesLabelText);
         cmLabel.setText(Strings.cmLabelText);
-        convertButton.setText(Strings.convertbuttonText);
-        clearButton.setText(Strings.clearbuttonText);
-        exitButton.setText(Strings.exitbuttonText);
+        convertButton.setText(Strings.convertButtonText);
+        clearButton.setText(Strings.clearButtonText);
+        exitButton.setText(Strings.exitButtonText);
     }
 
     {
@@ -159,80 +180,31 @@ public class GUI {
     public JPanel getPanel1() {
         return panel1;
     }
-
-    public void setPanel1(JPanel panel1) {
-        this.panel1 = panel1;
-    }
-
     public JTextField getFeetTextField() {
         return feetTextField;
     }
-
-    public void setFeetTextField(JTextField feetTextField) {
-        this.feetTextField = feetTextField;
-    }
-
     public JTextField getInchesTextField() {
         return inchesTextField;
     }
-
-    public void setInchesTextField(JTextField inchesTextField) {
-        this.inchesTextField = inchesTextField;
-    }
-
     public JButton getConvertButton() {
         return convertButton;
     }
-
-    public void setConvertButton(JButton convertButton) {
-        this.convertButton = convertButton;
-    }
-
     public JButton getExitButton() {
         return exitButton;
     }
-
-    public void setExitButton(JButton exitButton) {
-        this.exitButton = exitButton;
-    }
-
     public JButton getClearButton() {
         return clearButton;
     }
-
-    public void setClearButton(JButton clearButton) {
-        this.clearButton = clearButton;
-    }
-
     public JTextField getCmTextField() {
         return cmTextField;
     }
-
-    public void setCmTextField(JTextField cmTextField) {
-        this.cmTextField = cmTextField;
-    }
-
     public JLabel getFeetLabel() {
         return feetLabel;
     }
-
-    public void setFeetLabel(JLabel feetLabel) {
-        this.feetLabel = feetLabel;
-    }
-
     public JLabel getInchesLabel() {
         return inchesLabel;
     }
-
-    public void setInchesLabel(JLabel inchesLabel) {
-        this.inchesLabel = inchesLabel;
-    }
-
     public JLabel getCmLabel() {
         return cmLabel;
-    }
-
-    public void setCmLabel(JLabel cmLabel) {
-        this.cmLabel = cmLabel;
     }
 }

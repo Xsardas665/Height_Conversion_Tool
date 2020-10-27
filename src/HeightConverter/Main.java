@@ -11,6 +11,7 @@ public class Main {
         frame.setContentPane(gui.getPanel1());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         gui.setTexts();
+        gui.setButtonsListeners();
         frame.pack();
         frame.setVisible(true);
     }
