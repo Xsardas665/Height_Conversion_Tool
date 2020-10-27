@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class GUI {
-    public JPanel panel1;
+    private JPanel panel1;
     private JTextField feetTextField;
     private JTextField inchesTextField;
     private JButton convertButton;
@@ -82,7 +82,7 @@ public class GUI {
         gbc.fill = GridBagConstraints.HORIZONTAL;
         panel1.add(inchesTextField, gbc);
         convertButton = new JButton();
-        convertButton.setText("");
+        convertButton.setText(" ");
         gbc = new GridBagConstraints();
         gbc.gridx = 1;
         gbc.gridy = 2;
@@ -92,7 +92,7 @@ public class GUI {
         gbc.fill = GridBagConstraints.HORIZONTAL;
         panel1.add(convertButton, gbc);
         exitButton = new JButton();
-        exitButton.setText("");
+        exitButton.setText(" ");
         gbc = new GridBagConstraints();
         gbc.gridx = 3;
         gbc.gridy = 4;
@@ -101,7 +101,7 @@ public class GUI {
         gbc.fill = GridBagConstraints.HORIZONTAL;
         panel1.add(exitButton, gbc);
         clearButton = new JButton();
-        clearButton.setText("");
+        clearButton.setText(" ");
         gbc = new GridBagConstraints();
         gbc.gridx = 1;
         gbc.gridy = 4;
@@ -156,4 +156,83 @@ public class GUI {
         return panel1;
     }
 
+    public JPanel getPanel1() {
+        return panel1;
+    }
+
+    public void setPanel1(JPanel panel1) {
+        this.panel1 = panel1;
+    }
+
+    public JTextField getFeetTextField() {
+        return feetTextField;
+    }
+
+    public void setFeetTextField(JTextField feetTextField) {
+        this.feetTextField = feetTextField;
+    }
+
+    public JTextField getInchesTextField() {
+        return inchesTextField;
+    }
+
+    public void setInchesTextField(JTextField inchesTextField) {
+        this.inchesTextField = inchesTextField;
+    }
+
+    public JButton getConvertButton() {
+        return convertButton;
+    }
+
+    public void setConvertButton(JButton convertButton) {
+        this.convertButton = convertButton;
+    }
+
+    public JButton getExitButton() {
+        return exitButton;
+    }
+
+    public void setExitButton(JButton exitButton) {
+        this.exitButton = exitButton;
+    }
+
+    public JButton getClearButton() {
+        return clearButton;
+    }
+
+    public void setClearButton(JButton clearButton) {
+        this.clearButton = clearButton;
+    }
+
+    public JTextField getCmTextField() {
+        return cmTextField;
+    }
+
+    public void setCmTextField(JTextField cmTextField) {
+        this.cmTextField = cmTextField;
+    }
+
+    public JLabel getFeetLabel() {
+        return feetLabel;
+    }
+
+    public void setFeetLabel(JLabel feetLabel) {
+        this.feetLabel = feetLabel;
+    }
+
+    public JLabel getInchesLabel() {
+        return inchesLabel;
+    }
+
+    public void setInchesLabel(JLabel inchesLabel) {
+        this.inchesLabel = inchesLabel;
+    }
+
+    public JLabel getCmLabel() {
+        return cmLabel;
+    }
+
+    public void setCmLabel(JLabel cmLabel) {
+        this.cmLabel = cmLabel;
+    }
 }

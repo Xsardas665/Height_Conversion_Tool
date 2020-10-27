@@ -8,5 +8,4 @@ public class Strings {
     public static String convertbuttonText = "Convert";
     public static String clearbuttonText = "Clear";
     public static String exitbuttonText = "Exit";
-
 }
